@@ -1,9 +1,10 @@
 lst = [16, 17, 4, 3, 6, 5, 2]
-lst1 = [lst[-1]]
-for i in range(len(lst)-1):
-    lst2 = sorted(lst[i+1:], reverse=True)
-    if lst[i] > lst2[0]:
-        lst1.append(lst[i])
-print(lst1)
-
+res = []
+max_ele = lst[-1]
+res.append(max_ele)
+for i in range(len(lst)- 2, -1, -1):
+    if lst[i] > max_ele:
+        max_ele = lst[i]
+        res.append(max_ele)
+print(res)
 
