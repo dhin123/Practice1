@@ -27,5 +27,5 @@ def pattern(words, patter):
 
 
 patter = "g*t"
-words = ["get", "got", "gut", "goat", "guilt"]
+words = ["get", "got", "gut", "goat", "guilt","gotten"]
 print(pattern(words,patter))
